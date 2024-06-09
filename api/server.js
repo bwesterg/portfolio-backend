@@ -30,4 +30,8 @@ app.get('/photos', async (req, res) => {
 
 const PORT = 7000;
 
+app.get("/health", async () => {
+  res.send({ message: "good health"});
+})
+
 app.listen(PORT, console.log(`Server jamming on port ${PORT}`));
