@@ -30,7 +30,7 @@ app.get('/photos', async (req, res) => {
 
 const PORT = 7000;
 
-app.get("/health", async () => {
+app.get("/health", async (req, res) => {
   res.send({ message: "good health"});
 })
 
